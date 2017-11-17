@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "js-yaml": "3.6.1",
-    "ramda": "0.21.0",
+    "ramda": "0.25.0",
     "rxjs": "5.4.2"
   }
 }
