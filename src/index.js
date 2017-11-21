@@ -1,9 +1,9 @@
 import profile from './profile';
-import extensions from './extensions';
+import plugins from './plugins';
 
 export default function createDesktopDrivers( options ) {
   return {
-    extensions: extensions( options.extensions ),
+    plugins: plugins( options.plugins ),
     profile: profile( options.profile )
   };
 }
