@@ -1,4 +1,4 @@
-import Rx from 'rxjs/Rx';
+import { Observable } from 'rxjs';
 
 /**
  * Creates an observable from a function that takes a node-style-callback-function
@@ -13,8 +13,8 @@ export default function observableFromNodeCallback( f, context ) {
   // we thus wrap it in a new observable
   // TODO: check if still the case in RX5
   return ( ...args ) =>
-    Rx.Observable.create( observer => {
-      const nodeFunc = Rx.Observable.bindNodeCallback( f, context );
+    Observable.create( observer => {
+      const nodeFunc = Observable.bindNodeCallback( f, context );
       const source$ = nodeFunc( ...args );
       source$.subscribe( observer );
     } );

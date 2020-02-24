@@ -20,15 +20,15 @@
   "devDependencies": {
     "@babel/preset-env": "7.2.3",
     "@babel/core": "7.2.2",
-    "eslint": "5.12.0",
-    "eslint-config-funkmonkey": "0.0.1",
-    "eslint-plugin-import": "2.14.0",
+    "eslint": "6.8.0",
+    "eslint-config-funkmonkey": "2.0.0",
+    "eslint-plugin-import": "2.20.1",
     "gulp": "4.0.0",
     "gulp-babel": "8.0.0"
   },
   "dependencies": {
     "js-yaml": "3.6.1",
     "ramda": "0.25.0",
-    "rxjs": "5.4.2"
+    "rxjs": "6.3.3"
   }
 }
